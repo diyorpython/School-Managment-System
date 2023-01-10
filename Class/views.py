@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def response(request):
-    return HttpResponse("Hello world")
+    return render(request, "Class/index.html")
