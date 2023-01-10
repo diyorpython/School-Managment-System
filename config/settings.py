@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #'Api.apps.ApiConfig',
+    'Class.apps.ClassConfig',
 ]
 
 MIDDLEWARE = [
@@ -47,9 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
-    'Api.apps.ApiConfig',
-    'Class.apps.ClassConfig',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'usersDB',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Django',
         'USER': 'postgres',
         'PASSWORD': 'diyor12345',
         'HOST': '127.0.0.1',

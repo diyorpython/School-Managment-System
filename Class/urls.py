@@ -1,6 +1,6 @@
 from django.urls import path, re_path
-from .views import *
+from .views import response
 
-url_patters = [
-    path(),
+urlpatterns = [
+    path("res/", response),
 ]
